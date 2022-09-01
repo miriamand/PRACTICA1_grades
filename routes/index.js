@@ -40,7 +40,7 @@ passport.use(new LocalStrategy({
 router.post('/',
   passport.authenticate('local', { failureRedirect: '/' }),
   function (req, res) {
-    res.redirect('/dash');
+    res.redirect('/dashboard');
   }
 );
 
