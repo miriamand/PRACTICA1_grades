@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="/css/style.css" />
+<form action="/">
+    <nav class="topnav" style="background-color: #216aca;">
+        <a href="/dashboard" class="navbar-brand" style="color: white;">Plataforma Academica</a>
+
+        <button class="btn btn-outline-success my-2 my-sm-0" id="logout" type="submit" name="logout" style="background-color: #1a6fdf;;
+            color: white;">Cerrar Sesión
+        </button>
+</form>
+</nav>
+<br><br></br>
+
+<div class="container-fluid">
+    <div class="position-absolute top-50 start-50 translate-middle">
+        <table class="table table-light">
+            <thead>
+                <tr class="table-light text-center">
+                    <th scope="col">Clase</th>
+                    <th scope="col">Promedio</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each user}}
+                <tr class="table-light text-center">
+                    <td class="table-light">{{this.class_id}}</td>
+                    <td class="table-light">{{this.promedio}}</td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+</div>

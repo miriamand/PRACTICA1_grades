@@ -1,11 +1,11 @@
 var express = require('express');
 const { ObjectId } = require('mongodb');
+const { Agregar } = require('../db/mongo');
 var router = express.Router();
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('dashboard');
-});
+
+
 
 
 module.exports = router;

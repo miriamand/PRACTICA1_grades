@@ -1,14 +1,29 @@
 <link rel="stylesheet" href="/css/style.css" />
-<nav class="topnav" style="background-color: #216aca;">
-  <a class="navbar-brand" style="color: white;">Plataforma Academica</a>
-  <form class="form-inline">
-    <button class="btn btn-outline-success my-2 my-sm-0" id="logout" type="submit" name="logout" style="background-color: #1a6fdf;;
-            color: white;"><a href="/" style="color: white;">Cerrar Sesión</a>
-            </button>
-  </form>
-</nav>
+<form action="/">
+  <nav class="topnav" style="background-color: #216aca;">
+    <a class="navbar-brand" style="color: white;">Plataforma Academica</a>
 
-<div class="chart1" >
-  <canvas id="myChartOne"></canvas>
-</div>
- 
+    <button class="btn btn-outline-success my-2 my-sm-0" id="logout" type="submit" name="logout" style="background-color: #1a6fdf;;
+            color: white;">Cerrar Sesión
+    </button>
+  
+</form>
+ </nav>
+<br><br>
+
+{{#nose user}}
+
+{{/nose}}
+<br>
+<br>
+<br>
+{{!-- <div class="w-33">
+  <div class="center">
+    <button class="btn btn-outline-success my-2 my-sm-0" id="tabla" type="submit" name="logout" style="background-color: #1a6fdf;;
+            color: white;"><a href="/table" style="color: white ">Promedios por Clase</a>
+    </button>
+  </div>
+</div> --}}
+<form action="/table">
+  <button onclick="href=" /tabla" id="tabla" class="btn btn-primary btn-lg btn-block">Promedios por Clase</button>
+</form>
